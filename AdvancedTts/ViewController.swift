@@ -32,7 +32,6 @@ class ViewController: UIViewController {
         logInfo { "exiting \(#function)" }
     }
 
-
     @IBAction func speakText(_ sender: UIButton) {
         logInfo { "entering \(#function)" }
         let utterance = AVSpeechUtterance(string: speakTextView.text)
@@ -53,9 +52,9 @@ class ViewController: UIViewController {
         logInfo { "exiting \(#function)" }
     }
     
-    @IBAction func changeTextToEesti(_ sender: Any) {
+    @IBAction func changeTextToTurkish(_ sender: Any) {
         logInfo { "entering \(#function)" }
-        speakTextView.text = "Apple Inc. (varem Apple Computer, Inc.) on rahvusvaheline ettevõte, mis arendab ja toodab riistvara, tarkvara ning muud tarbeelektroonikat."
+        speakTextView.text = "Apple Inc. ya da eski adıyla Apple Computer, Inc., merkezi Cupertino'da  bulunan; tüketici elektroniği, bilgisayar yazılımı ve kişisel bilgisayar tasarlayan, geliştiren ve satan Amerikan çok uluslu şirkettir."
         logInfo { "exiting \(#function)" }
     }
     
@@ -64,5 +63,6 @@ class ViewController: UIViewController {
         speakTextView.text = "Apple Inc. is an American multinational technology company headquartered in Cupertino, California."
         logInfo { "exiting \(#function)" }
     }
+    
 }
 
