@@ -52,5 +52,17 @@ class ViewController: UIViewController {
         speakTextView.text = "애플 주식회사(영어: Apple Inc.)는 미국의 소프트웨어및 컴퓨터 하드웨어를 개발, 제작하는 회사이다. 이전 명칭은 애플 컴퓨터 주식회사(영어: Apple Computer, Inc.)였다."
         logInfo { "exiting \(#function)" }
     }
+    
+    @IBAction func changeTextToEesti(_ sender: Any) {
+        logInfo { "entering \(#function)" }
+        speakTextView.text = "Apple Inc. (varem Apple Computer, Inc.) on rahvusvaheline ettevõte, mis arendab ja toodab riistvara, tarkvara ning muud tarbeelektroonikat."
+        logInfo { "exiting \(#function)" }
+    }
+    
+    @IBAction func changeTextToEnglish(_ sender: Any) {
+        logInfo { "entering \(#function)" }
+        speakTextView.text = "Apple Inc. is an American multinational technology company headquartered in Cupertino, California."
+        logInfo { "exiting \(#function)" }
+    }
 }
 
