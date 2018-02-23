@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F11392C25BCE5ED89284FC22BAFD289 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7994FD426E891F984BC93CD8936CB9C /* Configuration.swift */; };
+		50BE65420127CD7EDD3A94ADEA6C052B /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01A12DFFDCDF2D2C2A27D6457EE65E /* Environment.swift */; };
+		646D935EAA04474005BE4D892AD42594 /* TraceLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AA55BB7F18E674B2ACAA782D4BCDB /* TraceLog.swift */; };
+		75111BC641872568DBF65CE7B0FF135D /* StaticContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED53773460189BE7ED018D0DF516AC /* StaticContext.swift */; };
+		801CB426833CD753D7C15BDC56115988 /* Pods-AdvancedTts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 076F73F0749BDD70A0537CCA6D101114 /* Pods-AdvancedTts-dummy.m */; };
+		8BCD83305F8231AF07491C8C3177AFFF /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F3EE69F2D44E3F0B52CDE930FDB0FF /* LogLevel.swift */; };
+		9B671067DB03D1B1E834908F36F8F7F1 /* Writer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A472AFFAE61A9D2FB49979E86A2C794D /* Writer.swift */; };
+		9E550D7067E1326FB15C5EE4AEC2BC45 /* RuntimeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26A599A735C89ADAE83E9BB3D044E2 /* RuntimeContext.swift */; };
+		AA6F72285B6EEBA372240065C8C67ADE /* TraceLog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B847E24AC2CA265B8EE9937AA031BA30 /* TraceLog-dummy.m */; };
+		B0074BA88500E198D158759F4DE1C2E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		BCDEA2E43E3C268BF51BE78056A0DA1F /* TraceLog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10C9D24015E9BFCFC67545663059E3A1 /* TraceLog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA687881B404F53B4993FC9AEF0F0835 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D6183A5DC9420B79BCA02B27CA26B8 /* Logger.swift */; };
+		EFB08540F4225139777E50D4E9BCDCC6 /* Pods-AdvancedTts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14AB4A43F7BB2CE419EE836EB175DAA4 /* Pods-AdvancedTts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F35F92E5AB7BC52F35471E615CBE1C13 /* ConsoleWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691D8631535546C5B2915A8B045FCC6 /* ConsoleWriter.swift */; };
+		F4D9D8F1904A2A0A3C8BDCE67F33D412 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61C05CF59AEF4AC82A0613AE5A1B8FA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E89D56870B6ED99F06DA11C45F713EC1;
+			remoteInfo = TraceLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		076F73F0749BDD70A0537CCA6D101114 /* Pods-AdvancedTts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdvancedTts-dummy.m"; sourceTree = "<group>"; };
+		0C1AA55BB7F18E674B2ACAA782D4BCDB /* TraceLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TraceLog.swift; path = Sources/TraceLog/TraceLog.swift; sourceTree = "<group>"; };
+		10C9D24015E9BFCFC67545663059E3A1 /* TraceLog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TraceLog-umbrella.h"; sourceTree = "<group>"; };
+		14AB4A43F7BB2CE419EE836EB175DAA4 /* Pods-AdvancedTts-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AdvancedTts-umbrella.h"; sourceTree = "<group>"; };
+		14DB86AA4AF0F2B31398CDB88158F837 /* Pods-AdvancedTts-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdvancedTts-acknowledgements.markdown"; sourceTree = "<group>"; };
+		24298E6D76C1AA5447B20755D65B860E /* Pods_AdvancedTts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AdvancedTts.framework; path = "Pods-AdvancedTts.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C9C8CDEC4C3DF63E961279D3ED83AFF /* TraceLog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TraceLog-prefix.pch"; sourceTree = "<group>"; };
+		2E01A12DFFDCDF2D2C2A27D6457EE65E /* Environment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Environment.swift; path = Sources/TraceLog/Environment.swift; sourceTree = "<group>"; };
+		30C1F89A3FF0377C142F19A661971CAD /* Pods-AdvancedTts-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdvancedTts-frameworks.sh"; sourceTree = "<group>"; };
+		37DAC979026F56C7B699B4D4C8489312 /* TraceLog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TraceLog.modulemap; sourceTree = "<group>"; };
+		41E91C8FB6EF4ADB968E261A62230DDE /* Pods-AdvancedTts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdvancedTts.release.xcconfig"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7691D8631535546C5B2915A8B045FCC6 /* ConsoleWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConsoleWriter.swift; path = Sources/TraceLog/ConsoleWriter.swift; sourceTree = "<group>"; };
+		76D6183A5DC9420B79BCA02B27CA26B8 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Sources/TraceLog/Logger.swift; sourceTree = "<group>"; };
+		7D31A0F4436A395E2F575E66A0A3E6C6 /* TraceLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TraceLog.framework; path = TraceLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B26A599A735C89ADAE83E9BB3D044E2 /* RuntimeContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuntimeContext.swift; path = Sources/TraceLog/RuntimeContext.swift; sourceTree = "<group>"; };
+		9C28CD4EC4236B2FD2D78F3519A54C53 /* Pods-AdvancedTts-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdvancedTts-acknowledgements.plist"; sourceTree = "<group>"; };
+		9FC18E67CACBA48B6C746E3A44CA1B32 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A472AFFAE61A9D2FB49979E86A2C794D /* Writer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Writer.swift; path = Sources/TraceLog/Writer.swift; sourceTree = "<group>"; };
+		A7994FD426E891F984BC93CD8936CB9C /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Sources/TraceLog/Configuration.swift; sourceTree = "<group>"; };
+		B847E24AC2CA265B8EE9937AA031BA30 /* TraceLog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TraceLog-dummy.m"; sourceTree = "<group>"; };
+		B9D78A490E177227F077279026516272 /* Pods-AdvancedTts-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdvancedTts-resources.sh"; sourceTree = "<group>"; };
+		BE4AA0BCE8D9D4792BF6289CCA3AC6E1 /* Pods-AdvancedTts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdvancedTts.debug.xcconfig"; sourceTree = "<group>"; };
+		C212FDB4C42EDA2C122FA6065ABE3A47 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9CE9D53B383936FA73BCA2497115037 /* Pods-AdvancedTts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AdvancedTts.modulemap"; sourceTree = "<group>"; };
+		D9ED53773460189BE7ED018D0DF516AC /* StaticContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StaticContext.swift; path = Sources/TraceLog/StaticContext.swift; sourceTree = "<group>"; };
+		F1F3EE69F2D44E3F0B52CDE930FDB0FF /* LogLevel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogLevel.swift; path = Sources/TraceLog/LogLevel.swift; sourceTree = "<group>"; };
+		F37F366955A933E82210E2A2569E1423 /* TraceLog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TraceLog.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C13D278E237C81EADDB03D14C1FE2B1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4D9D8F1904A2A0A3C8BDCE67F33D412 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC454F58DF1721BB09B5EBC72D09C53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0074BA88500E198D158759F4DE1C2E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26FDB1FFE891CC6BB5CC3404FFF7D549 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24298E6D76C1AA5447B20755D65B860E /* Pods_AdvancedTts.framework */,
+				7D31A0F4436A395E2F575E66A0A3E6C6 /* TraceLog.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31F081D206CDF203A1E08DADC3B08A4F /* Pods-AdvancedTts */ = {
+			isa = PBXGroup;
+			children = (
+				9FC18E67CACBA48B6C746E3A44CA1B32 /* Info.plist */,
+				C9CE9D53B383936FA73BCA2497115037 /* Pods-AdvancedTts.modulemap */,
+				14DB86AA4AF0F2B31398CDB88158F837 /* Pods-AdvancedTts-acknowledgements.markdown */,
+				9C28CD4EC4236B2FD2D78F3519A54C53 /* Pods-AdvancedTts-acknowledgements.plist */,
+				076F73F0749BDD70A0537CCA6D101114 /* Pods-AdvancedTts-dummy.m */,
+				30C1F89A3FF0377C142F19A661971CAD /* Pods-AdvancedTts-frameworks.sh */,
+				B9D78A490E177227F077279026516272 /* Pods-AdvancedTts-resources.sh */,
+				14AB4A43F7BB2CE419EE836EB175DAA4 /* Pods-AdvancedTts-umbrella.h */,
+				BE4AA0BCE8D9D4792BF6289CCA3AC6E1 /* Pods-AdvancedTts.debug.xcconfig */,
+				41E91C8FB6EF4ADB968E261A62230DDE /* Pods-AdvancedTts.release.xcconfig */,
+			);
+			name = "Pods-AdvancedTts";
+			path = "Target Support Files/Pods-AdvancedTts";
+			sourceTree = "<group>";
+		};
+		6946263EF52537848019E5A803803546 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C212FDB4C42EDA2C122FA6065ABE3A47 /* Info.plist */,
+				37DAC979026F56C7B699B4D4C8489312 /* TraceLog.modulemap */,
+				F37F366955A933E82210E2A2569E1423 /* TraceLog.xcconfig */,
+				B847E24AC2CA265B8EE9937AA031BA30 /* TraceLog-dummy.m */,
+				2C9C8CDEC4C3DF63E961279D3ED83AFF /* TraceLog-prefix.pch */,
+				10C9D24015E9BFCFC67545663059E3A1 /* TraceLog-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TraceLog";
+			sourceTree = "<group>";
+		};
+		72F3A0148C7A779298A573CBA0938AA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91369DB7C7BCCEC69752AD7EF9FF93C3 /* TraceLog */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				72F3A0148C7A779298A573CBA0938AA5 /* Pods */,
+				26FDB1FFE891CC6BB5CC3404FFF7D549 /* Products */,
+				A4E5B7823ED05ED733B9709FDD0800C1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		91369DB7C7BCCEC69752AD7EF9FF93C3 /* TraceLog */ = {
+			isa = PBXGroup;
+			children = (
+				6946263EF52537848019E5A803803546 /* Support Files */,
+				C5A7B7C2C0AED5450EB33883B521851F /* Swift */,
+			);
+			name = TraceLog;
+			path = TraceLog;
+			sourceTree = "<group>";
+		};
+		A4E5B7823ED05ED733B9709FDD0800C1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				31F081D206CDF203A1E08DADC3B08A4F /* Pods-AdvancedTts */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5A7B7C2C0AED5450EB33883B521851F /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				A7994FD426E891F984BC93CD8936CB9C /* Configuration.swift */,
+				7691D8631535546C5B2915A8B045FCC6 /* ConsoleWriter.swift */,
+				2E01A12DFFDCDF2D2C2A27D6457EE65E /* Environment.swift */,
+				76D6183A5DC9420B79BCA02B27CA26B8 /* Logger.swift */,
+				F1F3EE69F2D44E3F0B52CDE930FDB0FF /* LogLevel.swift */,
+				9B26A599A735C89ADAE83E9BB3D044E2 /* RuntimeContext.swift */,
+				D9ED53773460189BE7ED018D0DF516AC /* StaticContext.swift */,
+				0C1AA55BB7F18E674B2ACAA782D4BCDB /* TraceLog.swift */,
+				A472AFFAE61A9D2FB49979E86A2C794D /* Writer.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0C0960E140777261ABC0944B31C7068E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCDEA2E43E3C268BF51BE78056A0DA1F /* TraceLog-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB4EEB871AD188FB51542254E124A13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB08540F4225139777E50D4E9BCDCC6 /* Pods-AdvancedTts-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		80F36DB33FEA21892C55C3B4CE2C9CED /* Pods-AdvancedTts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DC35CEC8023168F46B0A8C5886D5315 /* Build configuration list for PBXNativeTarget "Pods-AdvancedTts" */;
+			buildPhases = (
+				F9A8A301387A8CDE0D7327083D9BC1C0 /* Sources */,
+				DCC454F58DF1721BB09B5EBC72D09C53 /* Frameworks */,
+				9BB4EEB871AD188FB51542254E124A13 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				526FBC9E02DD7F475CD01F54300BC850 /* PBXTargetDependency */,
+			);
+			name = "Pods-AdvancedTts";
+			productName = "Pods-AdvancedTts";
+			productReference = 24298E6D76C1AA5447B20755D65B860E /* Pods_AdvancedTts.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E89D56870B6ED99F06DA11C45F713EC1 /* TraceLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10E08CB58A9B6CBF4357BBF7140C6B7B /* Build configuration list for PBXNativeTarget "TraceLog" */;
+			buildPhases = (
+				A3E7A7F5B61722781E24B63CB5F28956 /* Sources */,
+				C13D278E237C81EADDB03D14C1FE2B1D /* Frameworks */,
+				0C0960E140777261ABC0944B31C7068E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TraceLog;
+			productName = TraceLog;
+			productReference = 7D31A0F4436A395E2F575E66A0A3E6C6 /* TraceLog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 26FDB1FFE891CC6BB5CC3404FFF7D549 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80F36DB33FEA21892C55C3B4CE2C9CED /* Pods-AdvancedTts */,
+				E89D56870B6ED99F06DA11C45F713EC1 /* TraceLog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3E7A7F5B61722781E24B63CB5F28956 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F11392C25BCE5ED89284FC22BAFD289 /* Configuration.swift in Sources */,
+				F35F92E5AB7BC52F35471E615CBE1C13 /* ConsoleWriter.swift in Sources */,
+				50BE65420127CD7EDD3A94ADEA6C052B /* Environment.swift in Sources */,
+				CA687881B404F53B4993FC9AEF0F0835 /* Logger.swift in Sources */,
+				8BCD83305F8231AF07491C8C3177AFFF /* LogLevel.swift in Sources */,
+				9E550D7067E1326FB15C5EE4AEC2BC45 /* RuntimeContext.swift in Sources */,
+				75111BC641872568DBF65CE7B0FF135D /* StaticContext.swift in Sources */,
+				AA6F72285B6EEBA372240065C8C67ADE /* TraceLog-dummy.m in Sources */,
+				646D935EAA04474005BE4D892AD42594 /* TraceLog.swift in Sources */,
+				9B671067DB03D1B1E834908F36F8F7F1 /* Writer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A8A301387A8CDE0D7327083D9BC1C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				801CB426833CD753D7C15BDC56115988 /* Pods-AdvancedTts-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		526FBC9E02DD7F475CD01F54300BC850 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TraceLog;
+			target = E89D56870B6ED99F06DA11C45F713EC1 /* TraceLog */;
+			targetProxy = 61C05CF59AEF4AC82A0613AE5A1B8FA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4159570202D9370805D770D745BE4FF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41E91C8FB6EF4ADB968E261A62230DDE /* Pods-AdvancedTts.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdvancedTts/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdvancedTts/Pods-AdvancedTts.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AdvancedTts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8AB4FFF4CFC136851AF7E010035DFFBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F37F366955A933E82210E2A2569E1423 /* TraceLog.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TraceLog/TraceLog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TraceLog/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TraceLog/TraceLog.modulemap";
+				PRODUCT_NAME = TraceLog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8EF8561CBB6C47746E51E2E7C7E00256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		928618DEB52AF4D803552A78091E6F90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE4AA0BCE8D9D4792BF6289CCA3AC6E1 /* Pods-AdvancedTts.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdvancedTts/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdvancedTts/Pods-AdvancedTts.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AdvancedTts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B33D2C271AEE5D5A834C851E5602D27A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F37F366955A933E82210E2A2569E1423 /* TraceLog.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TraceLog/TraceLog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TraceLog/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TraceLog/TraceLog.modulemap";
+				PRODUCT_NAME = TraceLog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B80191F8154FD771D111D3890B24D4BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10E08CB58A9B6CBF4357BBF7140C6B7B /* Build configuration list for PBXNativeTarget "TraceLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AB4FFF4CFC136851AF7E010035DFFBE /* Debug */,
+				B33D2C271AEE5D5A834C851E5602D27A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EF8561CBB6C47746E51E2E7C7E00256 /* Debug */,
+				B80191F8154FD771D111D3890B24D4BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DC35CEC8023168F46B0A8C5886D5315 /* Build configuration list for PBXNativeTarget "Pods-AdvancedTts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928618DEB52AF4D803552A78091E6F90 /* Debug */,
+				4159570202D9370805D770D745BE4FF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
