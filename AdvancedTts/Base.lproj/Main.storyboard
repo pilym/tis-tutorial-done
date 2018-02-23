@@ -40,7 +40,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cm-EO-2Qf">
                                 <rect key="frame" x="113" y="311" width="149" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change Language 1"/>
+                                <state key="normal" title="Change To Arabic"/>
                                 <connections>
                                     <action selector="changeTextToArabic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z4a-uI-SQ5"/>
                                 </connections>
@@ -48,7 +48,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPT-38-QSH">
                                 <rect key="frame" x="117" y="349" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change Language 2"/>
+                                <state key="normal" title="Change To Korean"/>
                                 <connections>
                                     <action selector="ChangeTextToKorean:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h6o-4z-kJo"/>
                                 </connections>
@@ -56,7 +56,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2Z-L8-KFp">
                                 <rect key="frame" x="117" y="387" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change Language 3"/>
+                                <state key="normal" title="Change To Turkish"/>
                                 <connections>
                                     <action selector="changeTextToTurkish:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ys-rm-HhH"/>
                                 </connections>
@@ -67,6 +67,14 @@
                                 <state key="normal" title="Change To English"/>
                                 <connections>
                                     <action selector="changeTextToEnglish:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ucM-Qm-7zE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsX-oJ-YO9">
+                                <rect key="frame" x="164" y="463" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopSpeech:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wVO-is-Uyw"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  AdvancedTts
 //
-//  Created by Nathan Miles on 2018-02-22.
-//  Copyright © 2018 Advanced Text To Speech Tutorial. All rights reserved.
+//  Created by me 5 minutes before this presentation
+//  Text is taken from the Wikipedia page for Apple Inc. in multiple languages and is copyrighted by all contributors to that page on Wikipedia, including bots. All copyright infringements intended blah blah blah
 //
 
 import UIKit
@@ -17,23 +17,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var languagePicker: UIPickerView!
     
     let speechSynthesizer = AVSpeechSynthesizer()
-    
+      
     override func viewDidLoad() {
         logInfo { "entering \(#function)" }
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
         logInfo { "exiting \(#function)" }
     }
-
+    
     override func didReceiveMemoryWarning() {
         logInfo { "entering \(#function)" }
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
         logInfo { "exiting \(#function)" }
     }
-
+    
     @IBAction func speakText(_ sender: UIButton) {
         logInfo { "entering \(#function)" }
+        
         let utterance = AVSpeechUtterance(string: speakTextView.text)
         
         speechSynthesizer.speak(utterance)
@@ -54,7 +56,7 @@ class ViewController: UIViewController {
     
     @IBAction func changeTextToTurkish(_ sender: Any) {
         logInfo { "entering \(#function)" }
-        speakTextView.text = "Apple Inc. ya da eski adıyla Apple Computer, Inc., merkezi Cupertino'da  bulunan; tüketici elektroniği, bilgisayar yazılımı ve kişisel bilgisayar tasarlayan, geliştiren ve satan Amerikan çok uluslu şirkettir."
+        speakTextView.text = "Apple Inc. ya da eski adıyla Apple Computer, Inc., merkezi Cupertino'da bulunan; tüketici elektroniği, bilgisayar yazılımı ve kişisel bilgisayar tasarlayan, geliştiren ve satan Amerikan çok uluslu şirkettir."
         logInfo { "exiting \(#function)" }
     }
     
@@ -64,5 +66,8 @@ class ViewController: UIViewController {
         logInfo { "exiting \(#function)" }
     }
     
+    @IBAction func stopSpeech(_ sender: UIButton) {
+        speechSynthesizer.stopSpeaking(at: AVSpeechBoundary.word)
+    }
 }
 
