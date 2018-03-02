@@ -33,10 +33,6 @@
                                     <action selector="speakText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wi2-rg-NPD"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aid-Ni-6jx">
-                                <rect key="frame" x="-7" y="-27" width="375" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cm-EO-2Qf">
                                 <rect key="frame" x="113" y="311" width="149" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -77,12 +73,19 @@
                                     <action selector="stopSpeech:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wVO-is-Uyw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDh-QB-U0d">
+                                <rect key="frame" x="67" y="31" width="240" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="languagePicker" destination="aid-Ni-6jx" id="fzf-Wc-aK2"/>
+                        <outlet property="langLabel" destination="qDh-QB-U0d" id="hhv-tE-aKf"/>
                         <outlet property="speakButton" destination="NmU-uX-HRU" id="zqJ-AD-DoT"/>
                         <outlet property="speakTextView" destination="erh-F1-scd" id="3yJ-r7-dWm"/>
                     </connections>

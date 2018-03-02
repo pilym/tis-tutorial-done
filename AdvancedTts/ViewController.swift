@@ -16,10 +16,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var speakButton: UIButton!
     @IBOutlet weak var languagePicker: UIPickerView!
     
+    @IBOutlet weak var langLabel: UILabel!
+    
     let speechSynthesizer = AVSpeechSynthesizer()
     
-    // ??. language code of the text
-    var voiceLangCode = "en-US"
+    // 3. language code of the text
+    var voiceLangCode = "en-US" {
+        // 5. update ui
+        didSet {
+            langLabel.text = "Speaking \(String(describing: Locale.current.localizedString(forIdentifier: voiceLangCode)!))"
+        }
+    }
     
     var languages: [Dictionary<String, String?>] = []
     
@@ -36,11 +43,13 @@ class ViewController: UIViewController {
         for voice in AVSpeechSynthesisVoice.speechVoices() {
             if (voice.language == "ar-SA" || voice.language == "ko-KR" || voice.language == "tr-TR")
             {
-                let name = NSLocale.current.localizedString(forRegionCode: voice.language)
+                let name = Locale.current.localizedString(forRegionCode: voice.language)
                 let dictionary = ["name": name, "code": voice.language]
                 languages.append(dictionary)
             }
         }
+        
+        
 
         logInfo { "exiting \(#function)" }
     }
@@ -55,7 +64,7 @@ class ViewController: UIViewController {
     @IBAction func speakText(_ sender: UIButton) {
         logInfo { "entering \(#function)" }
         
-        // 6. setup language and voice used for utterance
+        // 4. setup language and voice used for utterance
         let voice = AVSpeechSynthesisVoice(language: voiceLangCode)
         let utterance = AVSpeechUtterance(string: speakTextView.text)
         utterance.voice = voice
@@ -87,6 +96,7 @@ class ViewController: UIViewController {
     
     @IBAction func changeTextToEnglish(_ sender: Any) {
         logInfo { "entering \(#function)" }
+        voiceLangCode = "en-US"
         speakTextView.text = "Apple Inc. is an American multinational technology company headquartered in Cupertino, California."
         logInfo { "exiting \(#function)" }
     }
